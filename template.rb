@@ -179,7 +179,7 @@ export default class extends Controller {
     element.style.position = "relative";
 
     label.className = "element-highlight-label";
-    label.style.cssText = `position: absolute;bottom: 0; left: 0;display:block;padding: 0.125rem 0.25rem;font-size: 0.75rem;font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background: ${color};color: white;white-space: nowrap;border-radius: 0.25rem;`;
+    label.style.cssText = `position:absolute;bottom:0;left:0;display:block;padding:0.125rem 0.25rem;font-size:0.75rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;background:${color};color:white;white-space:nowrap;border-radius:0.25rem;`;
     label.textContent = property === "controller" ? element.dataset[property] : element[property] || "N/A";
 
     return label;
